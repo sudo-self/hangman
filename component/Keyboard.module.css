@@ -1,0 +1,40 @@
+.btn {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 17px;
+    background: transparent;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btn.active {
+    background-color: #ce1602;
+    color: white;
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: #818CF8;
+}
+
+@media only screen and (max-width: 480px) {
+    .btn {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+}
