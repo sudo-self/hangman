@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     if (isWinner) {
-      toast('Congratulations, you won!', {
+      toast('Congratulations Epic Win!', {
         icon: '👏',
         duration: 5000
       });
@@ -61,7 +61,7 @@ function App() {
 
   useEffect(() => {
     if (isLoser) {
-      toast.error('You lost, please refresh the page!', {
+      toast.error('You lost, time to try again!', {
         duration: 5000
       })
     }
